@@ -1,0 +1,6 @@
+[book]
+authors = ["Etsune"]
+language = "ja"
+multilingual = false
+src = "src"
+title = "НЯРС — Руководство"
