@@ -1,0 +1,217 @@
+<!DOCTYPE HTML>
+<html lang="ja" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Примеры, ссылки, заимствования - НЯРС — Руководство</title>
+        <!-- Custom HTML head -->
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="../index.html">Введение</a></li><li class="chapter-item expanded affix "><li class="part-title">Общее</li><li class="chapter-item expanded "><a href="../main/Поиск.html"><strong aria-hidden="true">1.</strong> Поиск</a></li><li class="chapter-item expanded "><a href="../main/Словари.html"><strong aria-hidden="true">2.</strong> Словари</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">3.</strong> Пользователи</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../main/Рейтинг.html"><strong aria-hidden="true">3.1.</strong> Рейтинг</a></li><li class="chapter-item expanded "><a href="../main/Загрузки.html"><strong aria-hidden="true">3.2.</strong> Загрузки</a></li><li class="chapter-item expanded "><a href="../main/Настройки.html"><strong aria-hidden="true">3.3.</strong> Настройки</a></li></ol></li><li class="chapter-item expanded "><a href="../main/Правки.html"><strong aria-hidden="true">4.</strong> Правки</a></li><li class="chapter-item expanded affix "><li class="part-title">Японско-русский словарь</li><li class="chapter-item expanded "><a href="../jp-ru/Общие_сведения.html"><strong aria-hidden="true">5.</strong> Общие сведения</a></li><li class="chapter-item expanded "><a href="../jp-ru/Транскрипции.html"><strong aria-hidden="true">6.</strong> Транскрипции</a></li><li class="chapter-item expanded "><a href="../jp-ru/Редактирование.html"><strong aria-hidden="true">7.</strong> Редактирование</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../jp-ru/Первая_статья.html"><strong aria-hidden="true">7.1.</strong> Первая статья</a></li><li class="chapter-item expanded "><a href="../jp-ru/Заголовок.html"><strong aria-hidden="true">7.2.</strong> Заголовок (чтение и написание)</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../jp-ru/Питч-акцент.html"><strong aria-hidden="true">7.2.1.</strong> Питч-акцент</a></li></ol></li><li class="chapter-item expanded "><a href="../jp-ru/Часть_речи_и_язык.html"><strong aria-hidden="true">7.3.</strong> Часть речи и язык</a></li><li class="chapter-item expanded "><a href="../jp-ru/Значение.html"><strong aria-hidden="true">7.4.</strong> Значение</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../jp-ru/Теги,_тематики_и_диалекты.html"><strong aria-hidden="true">7.4.1.</strong> Теги, тематики и диалекты</a></li><li class="chapter-item expanded "><a href="../jp-ru/Примеры,_ссылки,_заимствования.html" class="active"><strong aria-hidden="true">7.4.2.</strong> Примеры, ссылки, заимствования</a></li><li class="chapter-item expanded "><a href="../jp-ru/ББ-коды.html"><strong aria-hidden="true">7.4.3.</strong> ББ-коды</a></li></ol></li><li class="chapter-item expanded "><a href="../jp-ru/Прочее.html"><strong aria-hidden="true">7.5.</strong> Прочее</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../jp-ru/Связывание_статей.html"><strong aria-hidden="true">7.5.1.</strong> Связывание статей</a></li></ol></li></ol></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">НЯРС — Руководство</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="Примеры-ссылки-заимствования"><a class="header" href="#Примеры-ссылки-заимствования">Примеры, ссылки, заимствования</a></h1>
+<p>В окне редактирования значения внизу есть три вкладки: «Примеры», «Ссылки» и «Заимствования», рассмотрим их назначение.</p>
+<h3 id="Примеры"><a class="header" href="#Примеры">Примеры</a></h3>
+<p>Примеры в составе статей используются исключительно для уточнения значения.</p>
+<p>Примеры, которые здесь указываются, должны не просто показывать употребление слова, а давать какую-либо дополнительную информацию, например, показывать глагольное управление. Кроме того, крайне рекомендуется сокращать примеры до минимально возможных словосочетаний.</p>
+<p>Рассмотрим следующие ситуации:</p>
+<blockquote>
+<p>ふうとう【封筒】</p>
+<p>封筒に封をする запечатывать конверт</p>
+<p>Хороший пример. Показано употребление слова, в словосочетании отсутствуют лишние слова.</p>
+</blockquote>
+<blockquote>
+<p>ふゆ【冬】</p>
+<p>夏と冬どっちが好き？ Что ты больше любишь: лето или зиму?</p>
+<p>新しく冬のコート買わなくちゃ。  Мне надо купить новое зимнее пальто.</p>
+<p>Плохие примеры. Не привносят никакой новой информации, являются распространёнными предложениями. Подобные примеры должны быть перенесены в словарь примеров.</p>
+</blockquote>
+<p>Кроме того, в примерах могут приводиться составные слова, чтобы показать, как они образуются и какие возможны переводы.</p>
+<blockquote>
+<p>れんぱつ【連発・連ぱつ】</p>
+<p>6連発拳銃 шестизарядный револьвер</p>
+</blockquote>
+<h4 id="Фуригана-в-тексте-примера"><a class="header" href="#Фуригана-в-тексте-примера">Фуригана в тексте примера</a></h4>
+<p>В японском тексте примера можно указывать фуригану, для этого используются следующий синтаксис: <code>[кандзи|чтение]</code>, при этом чтения можно перечислять через <code>|</code>, в таком случае одно чтение справа будет соответствовать одному кандзи слева. Например:</p>
+<p><code>[五月雨|さみだれ]</code> -&gt; <ruby>五月雨<rp>（</rp><rt>さみだれ</rt><rp>）</rp></ruby></p>
+<p><code>[電話|でん|わ][番号|ばん|ごう]</code> -&gt;  <ruby>電<rp>（</rp><rt>でん</rt><rp>）</rp></ruby><ruby>話<rp>（</rp><rt>わ</rt><rp>）</rp></ruby><ruby>番<rp>（</rp><rt>ばん</rt><rp>）</rp></ruby><ruby>号<rp>（</rp><rt>ごう</rt><rp>）</rp></ruby></p>
+<p>Фуригану стоит указывать только в спорных ситуациях.</p>
+<p><em>Примечание</em>: в статьях может встретиться <code>《 》</code>: <code>七《なな》月《がつ》</code>, это устаревшая разметка, её использование нежелательно.</p>
+<h3 id="Ссылки"><a class="header" href="#Ссылки">Ссылки</a></h3>
+<p>Ссылки используются для указания отношений между статьями. Отношения могут быть следующих типов:</p>
+<ul>
+<li>синоним - <em>слова полностью синонимичны</em></li>
+<li>частичный синоним - <em>слова синонимичны не по всем значениям</em></li>
+<li>антоним</li>
+<li>сравни - <em>прочие связи между словами</em></li>
+<li>сокращение от</li>
+</ul>
+<p>Для <strong>синонимов</strong> и <strong>частичных синонимов</strong> ссылка проставляется с менее популярного слова на более популярное. Например, 濾過器 и フィルター, フィルター в данный момент более популярное слово, поэтому в статье 濾過器 нужно проставить ссылку на フィルター (обратная ссылка с フィルター на 濾過器 не нужна). Если выбрать более популярное слово не представляется возможным, допустимо проставить двухстороннюю ссылку, однако в целях удобства предпочтительнее всё же выбирать основное слово, на которое будут ссылаться все остальные синонимы.</p>
+<h3 id="Заимствования"><a class="header" href="#Заимствования">Заимствования</a></h3>
+<p>В заимствовании указывается источник заимствования из другого языка. Например, チェックイン образовано от английского слова check-in.</p>
+<p>Язык для заимствования указывается в соответствии с кодом <a href="https://ru.wikipedia.org/wiki/%D0%9A%D0%BE%D0%B4%D1%8B_%D1%8F%D0%B7%D1%8B%D0%BA%D0%BE%D0%B2#%D0%9A%D0%BE%D0%B4%D1%8B_%D1%8F%D0%B7%D1%8B%D0%BA%D0%BE%D0%B2_%D0%BF%D0%BE_ISO_639_%D0%B8_%D0%93%D0%9E%D0%A1%D0%A2_7.75-97">ISO 639-3</a> за исключением васэй-эйго, для них используется код <code>wasei</code>.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../jp-ru/Теги,_тематики_и_диалекты.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                            <a rel="next" href="../jp-ru/ББ-коды.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../jp-ru/Теги,_тематики_и_диалекты.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                    <a rel="next" href="../jp-ru/ББ-коды.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+    </body>
+</html>

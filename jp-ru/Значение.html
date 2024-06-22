@@ -1,0 +1,221 @@
+<!DOCTYPE HTML>
+<html lang="ja" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Значение - НЯРС — Руководство</title>
+        <!-- Custom HTML head -->
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="../index.html">Введение</a></li><li class="chapter-item expanded affix "><li class="part-title">Общее</li><li class="chapter-item expanded "><a href="../main/Поиск.html"><strong aria-hidden="true">1.</strong> Поиск</a></li><li class="chapter-item expanded "><a href="../main/Словари.html"><strong aria-hidden="true">2.</strong> Словари</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">3.</strong> Пользователи</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../main/Рейтинг.html"><strong aria-hidden="true">3.1.</strong> Рейтинг</a></li><li class="chapter-item expanded "><a href="../main/Загрузки.html"><strong aria-hidden="true">3.2.</strong> Загрузки</a></li><li class="chapter-item expanded "><a href="../main/Настройки.html"><strong aria-hidden="true">3.3.</strong> Настройки</a></li></ol></li><li class="chapter-item expanded "><a href="../main/Правки.html"><strong aria-hidden="true">4.</strong> Правки</a></li><li class="chapter-item expanded affix "><li class="part-title">Японско-русский словарь</li><li class="chapter-item expanded "><a href="../jp-ru/Общие_сведения.html"><strong aria-hidden="true">5.</strong> Общие сведения</a></li><li class="chapter-item expanded "><a href="../jp-ru/Транскрипции.html"><strong aria-hidden="true">6.</strong> Транскрипции</a></li><li class="chapter-item expanded "><a href="../jp-ru/Редактирование.html"><strong aria-hidden="true">7.</strong> Редактирование</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../jp-ru/Первая_статья.html"><strong aria-hidden="true">7.1.</strong> Первая статья</a></li><li class="chapter-item expanded "><a href="../jp-ru/Заголовок.html"><strong aria-hidden="true">7.2.</strong> Заголовок (чтение и написание)</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../jp-ru/Питч-акцент.html"><strong aria-hidden="true">7.2.1.</strong> Питч-акцент</a></li></ol></li><li class="chapter-item expanded "><a href="../jp-ru/Часть_речи_и_язык.html"><strong aria-hidden="true">7.3.</strong> Часть речи и язык</a></li><li class="chapter-item expanded "><a href="../jp-ru/Значение.html" class="active"><strong aria-hidden="true">7.4.</strong> Значение</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../jp-ru/Теги,_тематики_и_диалекты.html"><strong aria-hidden="true">7.4.1.</strong> Теги, тематики и диалекты</a></li><li class="chapter-item expanded "><a href="../jp-ru/Примеры,_ссылки,_заимствования.html"><strong aria-hidden="true">7.4.2.</strong> Примеры, ссылки, заимствования</a></li><li class="chapter-item expanded "><a href="../jp-ru/ББ-коды.html"><strong aria-hidden="true">7.4.3.</strong> ББ-коды</a></li></ol></li><li class="chapter-item expanded "><a href="../jp-ru/Прочее.html"><strong aria-hidden="true">7.5.</strong> Прочее</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../jp-ru/Связывание_статей.html"><strong aria-hidden="true">7.5.1.</strong> Связывание статей</a></li></ol></li></ol></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">НЯРС — Руководство</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="Значение"><a class="header" href="#Значение">Значение</a></h1>
+<p>Значения следует писать со строчной (маленькой) буквы, за исключением имён собственных. Точка или точка с запятой в конце не ставится.</p>
+<h2 id="Перечисления"><a class="header" href="#Перечисления">Перечисления</a></h2>
+<p>Чтобы указать несколько значений, используются разделительные символы: <code>;,</code> и перенос строки.</p>
+<p>Запятой разделяются синонимичные и очень близкие по значению переводы. Точкой с запятой разделяются более отдалённые по значению переводы. Перенос строки используется перед указанием производного слова (см. <a href="/jp-ru/%D0%97%D0%BD%D0%B0%D1%87%D0%B5%D0%BD%D0%B8%D0%B5.html#-%D0%9F%D1%80%D0%BE%D0%B8%D0%B7%D0%B2%D0%BE%D0%B4%D0%BD%D1%8B%D0%B5-%D1%81%D0%BB%D0%BE%D0%B2%D0%B0">«Производные слова»</a>).</p>
+<p>С технической точки зрения, разделительные символы используются для связывания статьи с русскими/английскими значениями, по этой причине следует отключать разделение, когда оно не требуется -- например, в сложноподчинённых предложениях. Отключение производится при помощи слэша <code>\</code>.</p>
+<pre><code>студент\, обучающийся за границей
+</code></pre>
+<h2 id="Использование-скобок"><a class="header" href="#Использование-скобок">Использование скобок</a></h2>
+<p>В НЯРСе вы можете встретить ошибочное использование скобок, в том числе в отредактированных статьях.</p>
+<p>Если вам такое встретится, пожалуйста, исправьте их в соответствии с нижеизложенными правилами.</p>
+<h3 id="Квадратные-скобки-"><a class="header" href="#Квадратные-скобки-">Квадратные скобки <code>[]</code></a></h3>
+<p>Квадратные скобки используются для взаимозаменяемых слов</p>
+<pre><code>мобильный [передвижной] дом
+-&gt;
+мобильный дом, передвижной дом
+</code></pre>
+<p>Если скобки заменяют больше 1 слова, то для них указывается граница при помощи ⌈</p>
+<pre><code>пищевая [поваренная] соль
+рассказ о ⌈своей жизни [своём собственном опыте]
+башня ⌈с часами [для часов]
+</code></pre>
+<h3 id="Круглые-скобки-"><a class="header" href="#Круглые-скобки-">Круглые скобки <code>()</code></a></h3>
+<p>Круглые скобки обозначают факультативную часть определения:</p>
+<pre><code>(свой) родной город
+-&gt;
+свой родной город, родной город
+</code></pre>
+<p>Пояснения и различные уточнения заключаются в круглые скобки и в курсив:</p>
+<pre><code>Ямато [i](древнее название Японии)[/i]
+</code></pre>
+<h3 id="Перечисления-в-скобках"><a class="header" href="#Перечисления-в-скобках">Перечисления в скобках</a></h3>
+<p>Как и в обычном тексте значения, в скобках могут использоваться символы перечисления <code>;,</code> и перенос строки.</p>
+<pre><code>грубо отёсанный [оструганный, околотый]
+-&gt;
+грубо отёсанный, грубо оструганный, грубо околотый
+</code></pre>
+<p>Отключить их действие можно при помощи экранирования слэшем <code>\</code>.</p>
+<p><strong>Обратите внимание</strong>, если круглые скобки выделены курсивом (текст примечания), то экранирование не нужно.</p>
+<pre><code>(блестящий с виду\, но жалкий по существу)
+</code></pre>
+<p>Перечисления в скобках должны быть грамматически согласованы с основным текстом, в противном случае надо раскрыть скобки и перечислить все значения отдельно:</p>
+<pre><code>НЕПРАВИЛЬНО: противовоспалительный препарат [средство]
+ПРАВИЛЬНО: противовоспалительный препарат; противовоспалительное средство
+</code></pre>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../jp-ru/Часть_речи_и_язык.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                            <a rel="next" href="../jp-ru/Теги,_тематики_и_диалекты.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../jp-ru/Часть_речи_и_язык.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                    <a rel="next" href="../jp-ru/Теги,_тематики_и_диалекты.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+    </body>
+</html>
